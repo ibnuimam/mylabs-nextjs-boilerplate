@@ -1,0 +1,14 @@
+@use "colors";
+
+$theme-colors: (
+    'primary': colors.$primary,
+    'secondary': colors.$secondary,
+    'success': colors.$success,
+    'info': colors.$info,
+    'warning': colors.$warning,
+    'danger': colors.$danger,
+    'light': colors.$light,
+    'dark': colors.$dark,
+);
+
+@import "~bootstrap/scss/bootstrap";
