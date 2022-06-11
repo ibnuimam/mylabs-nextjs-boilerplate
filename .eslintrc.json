@@ -1,7 +1,28 @@
 {
-  "extends": ["eslint:recommended", "next", "prettier"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "google",
+    "next",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
   "rules": {
     "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@next/next/no-page-custom-font": "off",
+    "require-jsdoc": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
   }
 }
